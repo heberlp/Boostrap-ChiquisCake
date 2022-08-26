@@ -219,7 +219,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
 .button a{
     display: flex;
     height: 30px;
-    width: 150px;
+    width: 100px;
     margin: 30px 0 10px 0;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -285,4 +285,28 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
 }
 .title_border{
     font-family: 'Dancing Script', cursive;
+}
+.user_container{
+}
+.bg_color{
+    background-image: url(../img/bg-form.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    
+}
+
+.user_form h1{
+    font-family: 'Dancing Script', cursive;
+}
+.user_form h2{
+    font-family: 'Jost', sans-serif;
+}
+.user_form{
+    height: 90vh;
+    width: 90vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.918);
 }
