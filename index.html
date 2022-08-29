@@ -10,50 +10,52 @@
 </head>
 <body>
   <header>
-      <section class="hero">
+      <section class="hero d-flex align-items-center">
+        <div class="text d-flex  flex-sm-column justify-content-center flex-wrap ms-5">
+          <p>La torta perfecta <br> para cada momento</p>
+          <a href="">Ver mas</a>
+        </div>
+        </section>
         <div>
-          <nav class="navbar sticky navbar-expand-lg navbar-dark">
+          <nav class="navbar nav_bg navbar-expand-lg navbar-dark">
             <div class="container-fluid mx-5">
-                <a class="navbar-brand" href="#">
-              <a class="navbar-brand" href="#">Chiquis Cakes</a>
+                <a class="navbar-brand" href="./index.html">
+              <a class="navbar-brand" href="./index.html">Chiquis Cakes</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item p-2">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item p-2">
                     <a class="nav-link" href="usuario.html">Mi Cuenta</a>
                   </li>
-                  <li class="nav-item dropdown p-2">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tienda
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Desayunos</a></li>
-                      <li><a class="dropdown-item" href="#">Mini Cakes</a></li>
-                      <li><a class="dropdown-item" href="#">Gift Boxes</a></li>
-                      <li><a class="dropdown-item" href="#">Tortas</a></li>
-                      <li><a class="dropdown-item" href="#">Salados</a></li>
-                    </ul>
-                    
+                  <li class="nav-item p-2">
+                    <div class="shop_btn btn-group">
+                      <button type="button" class="btn shop_btn_tiend"><a href="./productos.html"> Tienda </a></button>
+                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                        <li><a class="dropdown-item" href="#">Mini Cakes</a></li>
+                        <li><a class="dropdown-item" href="#">Gift Boxes</a></li>
+                        <li><a class="dropdown-item" href="#">Tortas</a></li>
+                        <li><a class="dropdown-item" href="#">Salados</a></li>
+                      </ul>
+                  </li>
                   <li class="nav-item p-2">
                     <a class="nav-link" href="usuario.html">About us</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="Busqueda bg-dark" placeholder="Busqueda" aria-label="Busqueda">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                <button class="button_cart btn">
+                  <span> <a href="carrito.html"> <img src="./img/carrito.jpg" style="height: 25px ;" alt=""></span></a>
+                </button>                
               </div>
             </div>
           </nav>
-        </div>
-        <div class="text d-flex  flex-sm-column justify-content-center ms-5">
-          <p>La torta perfecta <br> para cada momento</p>
-          <a href="">Ver mas</a>
         </div>
         </section>
       </header>
@@ -115,7 +117,7 @@
             <div class="form_new row mt-5 pb-5">
               <h1>REGISTRATE AL NEWSLETTER Y RECIBI TODAS NUESTRAS PROMOS</h1>
             </div>
-            <div class="form_new_1 form-floating mb-5">
+            <div class="container-fluid form_new_1 form-floating mb-5 d-flex justify-content-center">
               <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
               <label for="floatingInput">Email</label>
             </div>

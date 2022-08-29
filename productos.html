@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Chiquis Cakes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header >
+        <section class="bg-nav">
+            <nav class="navbar nav_tienda navbar-expand-lg navbar-light">
+                <div class="container-fluid mx-5">
+                    <a class="navbar-brand" href="#">
+                  <a class="navbar-brand" href="./index.html">Chiquis Cakes</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item p-2">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item p-2">
+                        <a class="nav-link" href="usuario.html">Mi Cuenta</a>
+                      </li>
+                      <li class="nav-item p-2">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn_tienda"><a href="./productos.html">Tienda</a></button>
+                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split btn_tienda " data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                              <li><a class="dropdown-item" href="#">Mini Cakes</a></li>
+                              <li><a class="dropdown-item" href="#">Gift Boxes</a></li>
+                              <li><a class="dropdown-item" href="#">Tortas</a></li>
+                              <li><a class="dropdown-item" href="#">Salados</a></li>
+                            </ul>
+                          </div>
+
+                      </li>
+                      
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="usuario.html">About us</a>
+                          </li>
+                    </ul>
+                    <button class="button_shop btn">
+                      <span> <a href="carrito.html"> <img src="./img/carrito.jpg" style="height: 25px ;" alt=""></span></a>
+                    </button>                
+                  </div>
+                </div>
+              </nav>
+        </section>
+    </header>
+    <main>
+        <div class="bg_tienda container-fluid d-flex align-items-center">
+            <div class="shop_bg text-wrap d-flex justifi-content-center flex-column ">
+                <h1> Nut Cakes </h1>
+                <h2>Crocancia, sabor y dulzura es lo particular de nuestra linea de nueces. <br> Probalas!</h2>
+            </div>
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show m-0" role="alert">
+            <strong>Hola!</strong> No olvides ingresar a tu cuenta para poder hacer tu pedido. Si no tenes cuenta <a href="./usuario.html" class="alert-link">hace click aca</a> y registrate.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <section class="container-fluid p-5 container_shop">
+            <div class="row">
+                <div class="col-3 categorias_shop border-end d-flex justify-content-center flex-column">
+                    <div class="row">
+                        <p class="h5 pt-3 ps-3">Filtro</p>
+                    </div>
+                    <div class="container-fluid">
+                      <p class="categories">Precio</p>
+                      <label for="customRange1" class="form-label">0 - 5000$</label>
+                      <input type="range" class="form-range" id="customRange1">
+                      <button type="button" class="btn btn_art btn-sm">Aplicar</button>
+                    </div>
+                    <div class="container-fluid p-0 m-3">
+                      <p class="categories">Ordenar</p>
+                      <ul class="nav nav-pills">
+                        <li class="nav-item btn_art_rang">
+                          <a class="nav-link " aria-current="page" href="#">Relevantes</a>
+                        </li>
+                        <li class="nav-item disable_btn">
+                          <a class="nav-link " href="#">Menor Precio</a>
+                        </li>
+                        <li class="nav-item disable_btn">
+                          <a class="nav-link " href="#">Mayor precio</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row ps-4 pb-5">
+                      <p class="categories">Categorias</p>
+                        <!-- Default checked radio -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                          <label class="form-check-label" for="flexRadioDefault2">Todo</label>
+                        </div>
+                        <!-- Default radio -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1"> Desayunos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Gift Boxes</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1"> Salados</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <p class="categories">Destacados</p>
+                    </div>
+                    <div class="row rounded justify-content-center align-items-center flex-wrap ">
+                        <div class="row d-flex justify-content-center align-items-center ">
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/Brownie.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Glaceado Chocolate</p>
+                            <p class="h6 d-flex justify-content-center align-items-center">$2150</p></div>
+
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/tortafrutilla.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Frutilla Cake</p>
+                            <p class="h6 d-flex justify-content-center align-items-center">$3520</p></div>
+
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/trespisos.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Tres Pisos Chocolatado</p>
+                            <p class="h6 d-flex justify-content-center align-items-center">$2980</p></div>
+                        </div> 
+                      <div class="row">
+                        <p class="categories">Tags</p>
+                      </div>
+                      <div class="container-fluid">
+                        <div class="container-fluid d-flex justify-content-between mb-2 ">
+                          <div class="tags_btn_A shadow-sm">
+                            <p> Frutilla</p>
+                          </div>
+                          <div class="tags_btn_A shadow-sm">
+                            <p>Chocolate</p>
+                          </div>
+                          <div class="tags_btn_A shadow-sm">
+                            <p>Crema</p>
+                          </div>
+                        </div>
+                        <div class="container-fluid d-flex justify-content-between ">
+                          <div class="tags_btn_B"><p>Cupcakes</p> </div>
+                          <div class="tags_btn_B"><p>Empanadas</p></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-9 categorias_shop_left container-fluid d-flex flex-wrap justify-content-between pt-5">
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/bagel.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/cocoliche.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/alfachoco.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/almendras.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/box1.png" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/medialuna12.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/sandwich-de-pollo.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/redvelvetcake.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/trespisos.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/boxes.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/medialunas.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/pan-con-queso.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/boxesmas.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/budin.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/galleta.jpg" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/oreo.png" style="height: 180px;" alt="">
+                      <p class="article_desc text-center m-0">Bagel</p>
+                      <p class="precio text-center m-0">$850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="container-fluid d-flex justify-content-center mt-2">
+                    <nav aria-label="...">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <span class="page-link">Atras</span>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item " aria-current="page">
+                          <span class="page-link">2</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Siguiente</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f">
+              <img src="./img/Faceboook.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"><img src="./img/TWITTER.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"><img src="./img/google_icon_131222.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"><img src="./img/INSTA.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+          ></a>
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"><img src="./img/github-logo_icon-icons.com_73546.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+          ></a>
+        </section>
+        <section class="title_border mb-4">
+          <h1>
+            Chiquis Cakes
+          </h1>
+        </section>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <p class="text-white">Todos los derechos son reservados</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

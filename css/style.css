@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-.navbar {
-    position: sticky !important;
+.nav_bg {
+    position: fixed;
+    top: 0%;
+    width: 100%;
     background: rgb(0,0,0);
     background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.4766281512605042) 100%);
@@ -49,7 +53,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
     background-position: center;
 }
 .text{
-    height: 80vh;
+    width: 40%;
     font-size: 70px;
     padding: 0px !important;
 }
@@ -254,7 +258,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
     text-align: center;
 }
 .form_new_1 input{
-    width:450px;
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.342);
 }
 .container_form{
@@ -294,6 +298,9 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
     height: 120vh;
     
 }
+.user_container{
+    top: 0%;
+}
 
 .user_form h1{
     font-family: 'Dancing Script', cursive;
@@ -302,9 +309,184 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(17,17,17,0.476628
     font-family: 'Jost', sans-serif;
 }
 .user_form{
+    margin-top: 100px;
     height: 90vh;
     width: 70%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgba(255, 255, 255, 0.918);
+}
+.drop_cart{
+    z-index: 3;
+    background-image: url(../img/carrito.jpg);
+}
+.button_shop{
+    background-color: rgba(78, 78, 78, 0.637);
+}
+.button_shop:hover{
+    background-color: rgba(173, 173, 173, 0.281);
+}
+.button_cart:hover{
+    background-color: rgba(49, 49, 49, 0.514);
+}
+.btn_tienda a{
+    text-decoration: none;
+    color: black;
+}
+.btn_tienda{
+    color: black;
+}
+.shop_btn_tiend a{
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+}
+.shop_btn{
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+}
+.shop_btn:hover{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.767);
+}
+.shop_btn_tiend:hover{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.767);
+}
+.bg_tienda{
+    background-image: url(../img/container_tienda.jpg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    
+}
+
+.bg_tienda{
+    font-family: 'Lobster Two', cursive;
+}
+.shop_bg{
+    width: 40%;
+    margin-left: 30px;
+    text-align: center;
+}
+.shop_bg h1{
+    color: rgb(180, 140, 102);
+    text-shadow: #CCC 1px 0 10px;
+    font-size: 55px;
+}
+.shop_bg h2{
+    color: #745d49;
+    text-shadow: #CCC 1px 0 10px;
+    font-size: 35px;
+}
+.text_shop{
+
+    font-family: 'Jost', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: #CCC 1px 0 10px;
+    font-size: 55px;
+}
+.tags_btn_A{
+        background-color: #ff7c67;
+        font-size: 15px ;
+        width: 80px;
+        height: 40px;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        
+}
+.tags_btn_A p{
+    display: flex;
+    align-items: center;
+    margin: 0px !important;
+}
+.tags_btn_B{
+    background-color: #ff7c67;
+    font-size: 15px ;
+    width: 80px;
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    
+}
+.tags_btn_B p{
+display: flex;
+align-items: center;
+margin: 0px !important;
+}
+.container_shop{
+    background-image: url(../img/background.jpg);
+}
+.categorias_shop{
+    background-color: white;
+    border-left: gray;
+}
+.categorias_shop_left{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.categories{
+    font-family: 'Jost', sans-serif;
+}
+.article{
+    padding: 10px;
+    height: 290px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.2s;
+}
+.article:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.article a{
+    text-decoration: none;
+    color: black;
+}
+.article_desc{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.precio{
+    font-size: 15;
+}
+.btn_art{
+    background-color: #faafa4;
+    transition: 0.1s;
+}
+.btn_art_rang{
+    background-color: #faafa4;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    transition: 0.1s;
+}
+.btn_art_rang a{
+    color: white;
+}
+.btn_art_rang a:hover{
+    color: rgb(0, 0, 0);
+}
+.btn_art_rang:hover{
+    background-color: white;
+}
+.disable_btn a{
+    color: black;
+}
+.bg-nav{
+    position: fixed;
+    width: 100% ;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 100%);
 }
