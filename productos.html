@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cuenta - Chiquis Cakes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <header >
         <section class="bg-nav">
             <nav class="navbar nav_tienda navbar-expand-lg navbar-light">
                 <div class="container-fluid mx-5">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                   <a class="navbar-brand" href="./index.html">Chiquis Cakes</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
                   <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item p-2">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                       </li>
                       <li class="nav-item p-2">
                         <a class="nav-link" href="usuario.html">Mi Cuenta</a>
@@ -44,11 +44,17 @@
                       </li>
                       
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="usuario.html">About us</a>
+                            <a class="nav-link" href="mas-informacion.html">+Info</a>
                           </li>
                     </ul>
-                    <button class="button_shop btn">
-                      <span> <a href="carrito.html"> <img src="./img/carrito.jpg" style="height: 25px ;" alt=""></span></a>
+                    <button type="button" class="btn position-relative button_shop">
+                      <a href="./carrito.html">
+                      <img src="./img/carrito.jpg" alt="" style="height: 25px;">
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-number">
+                        3
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                      </a>
                     </button>                
                   </div>
                 </div>
@@ -62,13 +68,13 @@
                 <h2>Crocancia, sabor y dulzura es lo particular de nuestra linea de nueces. <br> Probalas!</h2>
             </div>
         </div>
-        <div class="alert alert-dark alert-dismissible fade show m-0" role="alert">
+        <div class="alert alert-darks alert-dismissible fade show m-0" role="alert">
             <strong>Hola!</strong> No olvides ingresar a tu cuenta para poder hacer tu pedido. Si no tenes cuenta <a href="./usuario.html" class="alert-link">hace click aca</a> y registrate.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         <section class="container-fluid p-5 container_shop">
-            <div class="row">
-                <div class="col-3 categorias_shop border-end d-flex justify-content-center flex-column">
+            <div class="row flex-nowrap">
+                <div class="col-3 categorias_shop border-end d-flex flex-column container-filter">
                     <div class="row">
                         <p class="h5 pt-3 ps-3">Filtro</p>
                     </div>
@@ -78,21 +84,16 @@
                       <input type="range" class="form-range" id="customRange1">
                       <button type="button" class="btn btn_art btn-sm">Aplicar</button>
                     </div>
-                    <div class="container-fluid p-0 m-3">
+                    <div class="container-fluid p-0 m-2">
                       <p class="categories">Ordenar</p>
-                      <ul class="nav nav-pills">
-                        <li class="nav-item btn_art_rang">
-                          <a class="nav-link " aria-current="page" href="#">Relevantes</a>
-                        </li>
-                        <li class="nav-item disable_btn">
-                          <a class="nav-link " href="#">Menor Precio</a>
-                        </li>
-                        <li class="nav-item disable_btn">
-                          <a class="nav-link " href="#">Mayor precio</a>
-                        </li>
-                      </ul>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Mas relevantes</option>
+                        <option value="1">Menor precio</option>
+                        <option value="2">Mayor precio</option>
+                        <option value="3">Ordenar A-Z</option>
+                      </select>
                     </div>
-                    <div class="row ps-4 pb-5">
+                    <div class="row ps-4 pb-5 d-flex flex-wrap">
                       <p class="categories">Categorias</p>
                         <!-- Default checked radio -->
                         <div class="form-check">
@@ -124,7 +125,7 @@
                     <div class="row">
                       <p class="categories">Destacados</p>
                     </div>
-                    <div class="row rounded justify-content-center align-items-center flex-wrap ">
+                    <div class="row rounded justify-content-center align-items-center d-flex flex-wrap  ">
                         <div class="row d-flex justify-content-center align-items-center ">
                             <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/Brownie.jpg" style="height: 130px;" alt=""></a></div>
                             <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Glaceado Chocolate</p>
@@ -142,7 +143,7 @@
                         <p class="categories">Tags</p>
                       </div>
                       <div class="container-fluid">
-                        <div class="container-fluid d-flex justify-content-between mb-2 ">
+                        <div class="container-fluid d-flex justify-content-between mb-2 flex-wrap ">
                           <div class="tags_btn_A shadow-sm">
                             <p> Frutilla</p>
                           </div>
@@ -348,27 +349,27 @@
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating border border-0 m-1" href="#!" role="button"
             ><i class="fab fa-facebook-f">
               <img src="./img/Faceboook.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
           ></a>
     
           <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating border border-0 m-1" href="#!" role="button"
             ><i class="fab fa-twitter"><img src="./img/TWITTER.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
           ></a>
     
           <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating border border-0 m-1" href="#!" role="button"
             ><i class="fab fa-google"><img src="./img/google_icon_131222.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
           ></a>
     
           <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating border border-0   m-1" href="#!" role="button"
             ><i class="fab fa-instagram"><img src="./img/INSTA.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
           ></a>
           <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
             ><i class="fab fa-github"><img src="./img/github-logo_icon-icons.com_73546.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
           ></a>
         </section>

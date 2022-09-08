@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - ChiquisCakes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body class="bg_shop bg-dark">
+    <header>
+        <section class="user_container mb-5 ">
+            <nav class="navbar nav_bg navbar-expand-lg navbar-dark">
+              <div class="container-fluid mx-5">
+                  <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="./index.html">Chiquis Cakes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-2">
+                      <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link " href="usuario.html">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <div class="shop_btn btn-group">
+                        <button type="button" class="btn shop_btn_tiend"><a href="./productos.html"> Tienda </a></button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                          <li><a class="dropdown-item" href="#">Mini Cakes</a></li>
+                          <li><a class="dropdown-item" href="#">Gift Boxes</a></li>
+                          <li><a class="dropdown-item" href="#">Tortas</a></li>
+                          <li><a class="dropdown-item" href="#">Salados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="mas-informacion.html">+Info</a>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn position-relative button_cart">
+                    <a href="./carrito.html">
+                    <img src="./img/carrito.jpg" alt="" style="height: 25px;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                      6
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    </a>
+                  </button>       
+                </div>
+              </div>
+            </nav>
+        </section>
+    </header>
+    <main class="margin_shop">
+        <section class="container rounded bg-light mb-5">
+            <div class="row mt-5">
+                <div class="col-8">
+                    <div class="container-fluid d-flex align-items-center justify-content-around pt-4 pb-4 border-bottom">
+                        <div class="d-flex">
+                            <h2>Carrito de compras</h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p class="m-0">Tenes 3 articulos en tu carrito</p>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="mt-5 mb-5 ">
+                            <article class="d-flex justify-content-around mt-4 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded shadow-sm " src="./img/articles/box1.png" alt="" style="height:150px ;">
+                                    <p class="ms-3 mb-0">Box desayuno para 2</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex rounded border justify-content-between p-2">
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
+                                        </div>
+                                        <div class="d-flex ms-3 me-3">
+                                            <p class="m-0 d-flex align-items-center">1</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> <b>$1950</b></p>
+                                </div>
+                            </article>
+                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded shadow-sm " src="./img/articles/pan-con-queso.jpg" alt="" style="height:150px ;">
+                                    <p class="ms-5 mb-0">Pan de Queso</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex rounded border justify-content-between p-2">
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
+                                        </div>
+                                        <div class="d-flex ms-3 me-3">
+                                            <p class="m-0 d-flex align-items-center">4</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> <b>$980</b></p>
+                                </div>
+                            </article>
+                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded shadow-sm" src="./img/articles/budin.jpg" alt="" style="height:150px ;">
+                                    <p class="ms-5 mb-0">Budin Relleno</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex rounded border justify-content-between p-2">
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
+                                        </div>
+                                        <div class="d-flex ms-3 me-3">
+                                            <p class="m-0 d-flex align-items-center">1</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> <b>$1050</b></p>
+                                </div>
+                            </article>
+                            
+                        </div>
+                    </div>
+                    <div class="container ms-5 mb-4">
+                        <p><a href="./productos.html" class="text-dark">← Volver a la tienda</a></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container mt-4 pb-5 rounded-end resumen">
+                        <div class="container pt-5 pb-3 border-bottom ">
+                            <h5>Resumen</h5>
+                        </div>
+                        <div class="container d-flex justify-content-between mt-4">
+                            <h6>Subtotal</h6>
+                            <p>$3980</p>
+                        </div>
+                        <div class="container pt-3">
+                            <div>
+                                <h6>Costo de entrega</h6>
+                            </div>
+                            <div class="pt-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecciona una opcion</option>
+                                    <option value="1">Envio a domicilio $500</option>
+                                    <option value="2">Retiro en tienda $0</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="container pt-4">
+                                <p class="m-0" >¿Tenes un cupon de descuento?</p>
+                                <p><b>Ingresalo:</b></p>
+                            </div>
+                            <div class="container border-bottom">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Codigo"
+                                    aria-label="Codigo" aria-describedby="button-addon2"/>
+                                    <button class="btn btn-dark" type="button" id="button-addon2" data-mdb-ripple-color="dark"> → </button>
+                                  </div>
+                            </div>
+                            <div class="container d-flex justify-content-between pt-5">
+                                <h6>Total</h6>
+                                <p>$3980</p>
+                            </div>
+                            <div class="container pt-3">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button">Continuar compra</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f">
+                <img src="./img/Faceboook.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"><img src="./img/TWITTER.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
+              ><i class="fab fa-google"><img src="./img/google_icon_131222.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"><img src="./img/INSTA.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+            ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
+              ><i class="fab fa-github"><img src="./img/github-logo_icon-icons.com_73546.png" class="mh-100" style="width: 25px; height: 25px;" alt= "height"20 ></i
+            ></a>
+          </section>
+          <section class="title_border mb-4">
+            <h1>
+              Chiquis Cakes
+            </h1>
+          </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <p class="text-white">Todos los derechos son reservados</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
