@@ -140,6 +140,80 @@
 .title_border {
   font-family: 'Dancing Script', cursive; }
 
+.fa-facebook-f {
+  background-color: #4267B2; }
+
+.fa-instagram, .suscribe {
+  background-color: #E1306C; }
+
+.fa-google {
+  background-color: #DB4437; }
+
+.fa-twitter {
+  background-color: #1DA1F2; }
+
+.fa-github {
+  background-color: #000000; }
+
+.fa-instagram, .suscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.6s; }
+  .fa-instagram:hover, .suscribe:hover {
+    background-color: white; }
+
+.fa-twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.6s; }
+  .fa-twitter:hover {
+    background-color: white; }
+
+.fa-facebook-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.6s; }
+  .fa-facebook-f:hover {
+    background-color: white; }
+
+.fa-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.6s; }
+  .fa-google:hover {
+    background-color: white; }
+
+.fa-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.6s; }
+  .fa-github:hover {
+    background-color: white; }
+
+.suscribe {
+  width: 100px;
+  border: none; }
+
 /**Index**/
 .contain_item {
   display: flex; }

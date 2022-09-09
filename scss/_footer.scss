@@ -1,3 +1,87 @@
 .title_border{
     font-family: 'Dancing Script', cursive;
 }
+
+
+$redes: (
+    facebook-f: #4267B2,
+    instagram: #E1306C,
+    google: #DB4437,
+    twitter: #1DA1F2,
+    github: #000000
+);
+
+@each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+        background-color: $color;
+    }
+}
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+.fa-instagram{
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+
+    &:hover{
+        background-color: white;
+    }
+}
+.fa-twitter{
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+
+    &:hover{
+        background-color: white;
+    }
+}
+.fa-facebook-f{
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+
+    &:hover{
+        background-color: white;
+    }
+}
+.fa-google{
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+
+    &:hover{
+        background-color: white;
+    }
+}
+.fa-github{
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+
+    &:hover{
+        background-color: white;
+    }
+}
+.suscribe{
+    width: 100px;
+    border: none;
+    @extend .fa-instagram
+}
+
+.button .boton-productos{
+    background-color: map-get($redes, facebook);
+}
