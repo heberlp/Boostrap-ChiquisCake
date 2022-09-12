@@ -1,0 +1,138 @@
+@media screen and (max-width: 480px) {
+   /**index**/
+    /**Texto de index header**/
+    .text p{
+        font-size: 60px;
+    }
+    /**info adicional**/
+    .dad_info{
+        height: 65vh;
+    }
+    .son_adc{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info_adc{
+        width: 200px;
+        border: none !important;
+    }
+    /**texto variedades**/
+    .text_other h2{
+        text-align: center;
+    }
+
+    /**Usuario**/
+    /**Form**/
+    .user_form{
+        width: 40vh !important;
+        height: 60vh;
+    }
+    /**Mas informacion**/
+    /**Contenedor mas info**/
+    .container_masinfo{
+        flex-direction: column;
+    }
+    .columna-faqs{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .columna-form{
+        width: 100%;
+    }
+    /**Carrito**/
+    /**contenedor de carrito**/
+    .contenedor-cart{
+        flex-direction: column;
+    }
+    /**Textos de carrito**/
+    .text-container-cart{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /**articulos del carro**/
+    .article_cart{
+        width: 100%  ;
+    }
+    /**Volver tienda**/
+    .volver{
+        display: flex;
+        padding: 0 !important;
+        justify-content: center;
+    }
+    /**Resumen**/
+    .resumen_cart{
+        width: 100%;
+    }
+    /**Productos**/
+    /**Bg Tienda**/
+    .bg_tienda{
+        height: 55vh;
+    }
+    /**Letra Header tienda**/
+    .shop_bg{
+        margin: 0 !important;
+        width: 100% !important;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+    /**Filtro de productos**/
+    .container-filter{
+        display: none !important;
+    }
+    /**articulos tienda**/
+    .categorias_shop_left{
+        justify-content: center !important;
+        box-shadow: none !important;
+    }
+}
+
+@media screen and (max-width: 990px){
+    /**Info adcional index**/
+    .dad_info{
+        height: 65vh;
+    }
+    .son_adc{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info_adc{
+        width: 200px;
+        border: none !important;
+    }
+    /**Usuario**/
+    /**Form**/
+    .user_form{
+        width: 40vh !important;
+        height: 80vh;
+    }
+    /**contenedor de carrito**/
+    .contenedor-cart{
+        flex-direction: column;
+    }
+    /**Textos de carrito**/
+    .text-container-cart{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /**articulos del carro**/
+    .article_cart{
+        width: 100%  ;
+    }
+    /**Volver tienda**/
+    .volver{
+        display: flex;
+        padding: 0 !important;
+        justify-content: center;
+    }
+    /**Resumen**/
+    .resumen_cart{
+        width: 100%;
+    }
+    /**Productos**/
+    /**Bg Tienda**/
+    .bg_tienda{
+        height: 55vh;
+    }
+
+}
