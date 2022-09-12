@@ -13,6 +13,7 @@
 </head>
 <body>
     <header >
+      <!--Navegacion-->
         <section class="bg-nav">
             <nav class="navbar nav_tienda navbar-expand-lg navbar-light">
                 <div class="container-fluid mx-5">
@@ -65,28 +66,34 @@
         </section>
     </header>
     <main>
+      <!--Imagen de productos header-->
         <div class="bg_tienda container-fluid d-flex align-items-center">
             <div class="shop_bg text-wrap d-flex justifi-content-center flex-column ">
                 <h1> Nut Cakes </h1>
                 <h2>Crocancia, sabor y dulzura es lo particular de nuestra linea de nueces. <br> Probalas!</h2>
             </div>
         </div>
+        <!--Alerta de cuenta-->
         <div class="alert alert-darks alert-dismissible fade show m-0" role="alert">
             <strong>Hola!</strong> No olvides ingresar a tu cuenta para poder hacer tu pedido. Si no tenes cuenta <a href="./usuario.html" class="alert-link">hace click aca</a> y registrate.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
+          <!--Container de seccion productos-->
         <section class="container-fluid p-5 container_shop">
             <div class="row flex-nowrap">
                 <div class="col-3 categorias_shop border-end d-flex flex-column container-filter">
+                  <!--Filtro y categorias-->
                     <div class="row">
                         <p class="h5 pt-3 ps-3">Filtro</p>
                     </div>
+                    <!--Rango de precio-->
                     <div class="container-fluid">
                       <p class="categories">Precio</p>
                       <label for="customRange1" class="form-label">0 - 5000$</label>
                       <input type="range" class="form-range" id="customRange1">
                       <button type="button" class="btn btn_art btn-sm">Aplicar</button>
                     </div>
+                    <!-- Ordenar los productos-->
                     <div class="container-fluid p-0 m-2">
                       <p class="categories">Ordenar</p>
                       <select class="form-select" aria-label="Default select example">
@@ -96,6 +103,7 @@
                         <option value="3">Ordenar A-Z</option>
                       </select>
                     </div>
+                    <!--Check productos-->
                     <div class="row ps-4 pb-5 d-flex flex-wrap">
                       <p class="categories">Categorias</p>
                         <!-- Default checked radio -->
@@ -125,80 +133,159 @@
                             <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
                         </div>
                     </div>
+                    <!--Articulos destacados de filtro-->
                     <div class="row">
                       <p class="categories">Destacados</p>
                     </div>
                     <div class="row rounded justify-content-center align-items-center d-flex flex-wrap  ">
                         <div class="row d-flex justify-content-center align-items-center ">
-                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/Brownie.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/articles/Brownie.jpg" style="height: 130px;" alt="Brownie"></a></div>
                             <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Glaceado Chocolate</p>
                             <p class="h6 d-flex justify-content-center align-items-center">$2150</p></div>
 
-                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/tortafrutilla.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/articles/tortafrutilla.jpg" style="height: 130px;" alt="torta frutilla"></a></div>
                             <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Frutilla Cake</p>
                             <p class="h6 d-flex justify-content-center align-items-center">$3520</p></div>
 
-                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/trespisos.jpg" style="height: 130px;" alt=""></a></div>
+                            <div class="row"><a href="" class="d-flex justify-content-center align-items-center"> <img src="./img/articles/trespisos.jpg" style="height: 130px;" alt="tres Pisos"></a></div>
                             <div class="row "> <p class=" h6 d-flex justify-content-center align-items-center text-center">Tres Pisos Chocolatado</p>
                             <p class="h6 d-flex justify-content-center align-items-center">$2980</p></div>
                         </div> 
+                        <!--Tags de orden-->
                       <div class="row">
                         <p class="categories">Tags</p>
                       </div>
                       <div class="container-fluid">
-                        <div class="container-fluid d-flex justify-content-between mb-2 flex-wrap ">
-                          <div class="tags_btn_A shadow-sm">
+                        <div class="container-fluid d-flex justify-content-center mb-2 flex-wrap ">
+                          <div class="tags_btn_A shadow-sm p-1 m-1">
                             <p> Frutilla</p>
                           </div>
-                          <div class="tags_btn_A shadow-sm">
+                          <div class="tags_btn_A shadow-sm p-1 m-1">
                             <p>Chocolate</p>
                           </div>
-                          <div class="tags_btn_A shadow-sm">
+                          <div class="tags_btn_A shadow-sm p-1 m-1">
                             <p>Crema</p>
+                          </div>
+                          <div class="tags_btn_B p-1 m-1">
+                            <p>Cupcakes</p>
+                           </div>
+                          <div class="tags_btn_B p-1 m-1">
+                            <p>Empanadas</p>
                           </div>
                         </div>
                         <div class="container-fluid d-flex justify-content-between ">
-                          <div class="tags_btn_B"><p>Cupcakes</p> </div>
-                          <div class="tags_btn_B"><p>Empanadas</p></div>
+                          
                         </div>
                       </div>
                     </div>
                 </div>
-                <div class="col-9 categorias_shop_left container-fluid d-flex flex-wrap justify-content-between pt-5">
+                <!--Container de articulos-->
+                <div class="col-9 categorias_shop_left container-fluid d-flex flex-wrap justify-content-between pt-1">
+                  <!--Articulos-->
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/bagel.jpg" style="height: 180px;" alt="">
+                      <img src="./img/articles/bagel.jpg" style="height: 180px;" alt="bagel">
                       <p class="article_desc text-center m-0">Bagel</p>
                       <p class="precio text-center m-0">$850</p>
                       <div class="container d-flex justify-content-center">
-                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                        <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
                     </a>
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/cocoliche.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/cocoliche.jpg" style="height: 180px;" alt="Coco y crema">
+                      <p class="article_desc text-center m-0">Cocoliche</p>
+                      <p class="precio text-center m-0">$1020</p>
                       <div class="container d-flex justify-content-center">
-                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                        <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
                     </a>
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/alfachoco.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/alfachoco.jpg" style="height: 180px;" alt="alfajor de chocolate">
+                      <p class="article_desc text-center m-0">Alfajor de chocolate</p>
+                      <p class="precio text-center m-0">$320</p>
                       <div class="container d-flex justify-content-center">
-                        <button type="button" class="btn btn_art btn-sm">Small button</button>
+                        <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
                     </a>
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/almendras.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
+                      <img src="./img/articles/almendras.jpg" style="height: 180px;" alt="Almendrado">
+                      <p class="article_desc text-center m-0">Torta almendrada</p>
+                      <p class="precio text-center m-0">$3850</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/box1.png" style="height: 180px;" alt="box desayuno">
+                      <p class="article_desc text-center m-0">Box desayuno para 2</p>
+                      <p class="precio text-center m-0">$1550</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/medialuna12.jpg" style="height: 180px;" alt="12 medialunas">
+                      <p class="article_desc text-center m-0">Medialunas 12</p>
+                      <p class="precio text-center m-0">$860</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2 ">
+                    <a href="">
+                      <img src="./img/articles/sandwich-de-pollo.jpg" style="height: 180px;" alt="Sandwich de pollo">
+                      <p class="article_desc text-center m-0">Sandwich de pollo</p>
+                      <p class="precio text-center m-0">$1400</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/redvelvetcake.jpg" style="height: 180px;" alt="torta red velvet">
+                      <p class="article_desc text-center m-0">Red Velvet Cake</p>
+                      <p class="precio text-center m-0">$3520</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/trespisos.jpg" style="height: 180px;" alt="Tres pisos">
+                      <p class="article_desc text-center m-0">Tres pisos</p>
+                      <p class="precio text-center m-0">$1590</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/boxes.jpg" style="height: 180px;" alt="Box 2">
+                      <p class="article_desc text-center m-0">Box para 1</p>
+                      <p class="precio text-center m-0">$1000</p>
+                      <div class="container d-flex justify-content-center">
+                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article d-flex flex-column m-2">
+                    <a href="">
+                      <img src="./img/articles/medialunas.jpg" style="height: 180px;" alt="Medialunas">
+                      <p class="article_desc text-center m-0">Medialunas</p>
                       <p class="precio text-center m-0">$850</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
@@ -207,9 +294,9 @@
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/box1.png" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/pan-con-queso.jpg" style="height: 180px;" alt="pan de queso">
+                      <p class="article_desc text-center m-0">Pan de queso</p>
+                      <p class="precio text-center m-0">$150</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
@@ -217,9 +304,9 @@
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/medialuna12.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/boxesmas.jpg" style="height: 180px;" alt="Box dulce">
+                      <p class="article_desc text-center m-0">Box variado</p>
+                      <p class="precio text-center m-0">$1890</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
@@ -227,9 +314,9 @@
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/sandwich-de-pollo.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/budin.jpg" style="height: 180px;" alt="Budin">
+                      <p class="article_desc text-center m-0">Budin</p>
+                      <p class="precio text-center m-0">$570</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
@@ -237,9 +324,9 @@
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/redvelvetcake.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/galleta.jpg" style="height: 180px;" alt="Galleta">
+                      <p class="article_desc text-center m-0">Choco Cookie</p>
+                      <p class="precio text-center m-0">$220</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
@@ -247,97 +334,28 @@
                   </div>
                   <div class="article d-flex flex-column m-2">
                     <a href="">
-                      <img src="./img/articles/trespisos.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
+                      <img src="./img/articles/oreo.png" style="height: 180px;" alt="Oreo">
+                      <p class="article_desc text-center m-0">Relleno oreo</p>
+                      <p class="precio text-center m-0">$890</p>
                       <div class="container d-flex justify-content-center">
                       <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
                       </div>
                     </a>
                   </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/boxes.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/medialunas.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/pan-con-queso.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/boxesmas.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/budin.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/galleta.jpg" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="article d-flex flex-column m-2">
-                    <a href="">
-                      <img src="./img/articles/oreo.png" style="height: 180px;" alt="">
-                      <p class="article_desc text-center m-0">Bagel</p>
-                      <p class="precio text-center m-0">$850</p>
-                      <div class="container d-flex justify-content-center">
-                      <button type="button" class="btn btn_art btn-sm">Agregar al carrito</button>
-                      </div>
-                    </a>
-                  </div>
+                  <!--Paginas seleccion-->
                   <div class="container-fluid d-flex justify-content-center mt-2">
                     <nav aria-label="...">
                       <ul class="pagination">
                         <li class="page-item disabled">
                           <span class="page-link">Atras</span>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link bg-dark border-0" href="#">1</a></li>
                         <li class="page-item " aria-current="page">
-                          <span class="page-link">2</span>
+                          <span class="page-link text-dark">2</span>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="#">Siguiente</a>
+                          <a class="page-link text-dark" href="#">Siguiente</a>
                         </li>
                       </ul>
                     </nav>
@@ -346,6 +364,7 @@
             </div>
         </section>
     </main>
+    <!--Footer-->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
