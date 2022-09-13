@@ -78,6 +78,87 @@
             <strong>Hola!</strong> No olvides ingresar a tu cuenta para poder hacer tu pedido. Si no tenes cuenta <a href="./usuario.html" class="alert-link">hace click aca</a> y registrate.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
+          <div class="article-responsive container-fluid bg-light pt-4 pb-4 d-flex ps-3">
+            <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-filter"></i></button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtrar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body p-0">
+              <!--Rango de precio-->
+              <div class="container-fluid">
+                <p class="categories">Precio</p>
+                <label for="customRange1" class="form-label">0 - 5000$</label>
+                <input type="range" class="form-range" id="customRange1">
+                <button type="button" class="btn btn_art btn-sm">Aplicar</button>
+              </div>
+              <!-- Ordenar los productos-->
+              <div class="container-fluid p-0 m-2">
+                <p class="categories">Ordenar</p>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Mas relevantes</option>
+                  <option value="1">Menor precio</option>
+                  <option value="2">Mayor precio</option>
+                  <option value="3">Ordenar A-Z</option>
+                </select>
+              </div>
+              <!--Check productos-->
+              <div class="row ps-4 pb-5 d-flex flex-wrap">
+                <p class="categories">Categorias</p>
+                  <!-- Default checked radio -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                    <label class="form-check-label" for="flexRadioDefault2">Todo</label>
+                  </div>
+                  <!-- Default radio -->
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                      <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
+                    </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                      <label class="form-check-label" for="flexRadioDefault1"> Desayunos</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                      <label class="form-check-label" for="flexRadioDefault1">Gift Boxes</label>
+                    </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                      <label class="form-check-label" for="flexRadioDefault1"> Salados</label>
+                    </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                      <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
+                  </div>
+                  <div class="row">
+                    <p class="categories">Tags</p>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="container-fluid d-flex justify-content-center mb-2 flex-wrap ">
+                      <div class="tags_btn_A shadow-sm p-1 m-1">
+                        <p> Frutilla</p>
+                      </div>
+                      <div class="tags_btn_A shadow-sm p-1 m-1">
+                        <p>Chocolate</p>
+                      </div>
+                      <div class="tags_btn_A shadow-sm p-1 m-1">
+                        <p>Crema</p>
+                      </div>
+                      <div class="tags_btn_B p-1 m-1">
+                        <p>Cupcakes</p>
+                       </div>
+                      <div class="tags_btn_B p-1 m-1">
+                        <p>Empanadas</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <h2 class="ps-2">Filtro</h2>
+          </div>
           <!--Container de seccion productos-->
         <section class="container-fluid p-5 container_shop">
             <div class="row flex-nowrap">

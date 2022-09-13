@@ -85,6 +85,13 @@
         justify-content: center !important;
         box-shadow: none !important;
     }
+    .form-select{
+        width: 150px !important;
+    }
+    .article-responsive{
+        display: flex !important;
+    }
+
 }
 
 @media screen and (max-width: 990px){
@@ -134,5 +141,25 @@
     .bg_tienda{
         height: 55vh;
     }
-
+    .shop_bg{
+        margin: 0 !important;
+        width: 100% !important;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+    /**Filtro**/
+    .container-filter{
+        display: none !important;
+    }
+    .categorias_shop_left{
+        justify-content: center !important;
+        box-shadow: none !important;
+    }
+    .form-select{
+        width: 150px !important;
+    }
+    .article-responsive{
+        display: flex !important;
+    }
 }
