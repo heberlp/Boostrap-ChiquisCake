@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icons/Blanco y negro minimalista monograma tipografico logotipo .png">
     <title>Tienda - Chiquis Cakes</title>
     <meta name="description" content="Entra a nuestra tienda y conoce nuestros productos">
     <meta name="keywords" content="Tortas, Dulce, Argentina, Buenos Aires, Cakes, Dulde de leche, Desayunos, Delivery, Online ">
@@ -14,7 +15,7 @@
 <body>
     <header >
       <!--Navegacion-->
-        <section class="bg-nav">
+        <section class="bg-nav" style="z-index: 15;">
             <nav class="navbar nav_tienda navbar-expand-lg navbar-light">
                 <div class="container-fluid mx-5">
                     <a class="navbar-brand" href="./index.html">
@@ -78,86 +79,30 @@
             <strong>Hola!</strong> No olvides ingresar a tu cuenta para poder hacer tu pedido. Si no tenes cuenta <a href="./usuario.html" class="alert-link">hace click aca</a> y registrate.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <div class="article-responsive container-fluid bg-light pt-4 pb-4 d-flex ps-3">
-            <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-filter"></i></button>
+          <div class="article-responsive container-fluid bg-light pt-4 pb-4 d-flex ps-3 d-flex justify-content-center flex-column">
+            <div class="container-fluid d-flex justify-content-center">
+              <button class="btn btn-dark d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="width: 60% ;"><i class="fa-solid fa-filter pe-2"></i><h6 class="m-0">Filtrar</h6></button>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtrar</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body p-0">
-              <!--Rango de precio-->
-              <div class="container-fluid">
-                <p class="categories">Precio</p>
-                <label for="customRange1" class="form-label">0 - 5000$</label>
-                <input type="range" class="form-range" id="customRange1">
-                <button type="button" class="btn btn_art btn-sm">Aplicar</button>
-              </div>
-              <!-- Ordenar los productos-->
-              <div class="container-fluid p-0 m-2">
-                <p class="categories">Ordenar</p>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Mas relevantes</option>
-                  <option value="1">Menor precio</option>
-                  <option value="2">Mayor precio</option>
-                  <option value="3">Ordenar A-Z</option>
-                </select>
-              </div>
-              <!--Check productos-->
-              <div class="row ps-4 pb-5 d-flex flex-wrap">
-                <p class="categories">Categorias</p>
-                  <!-- Default checked radio -->
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                    <label class="form-check-label" for="flexRadioDefault2">Todo</label>
-                  </div>
-                  <!-- Default radio -->
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                      <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
-                    </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                      <label class="form-check-label" for="flexRadioDefault1"> Desayunos</label>
-                  </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                      <label class="form-check-label" for="flexRadioDefault1">Gift Boxes</label>
-                    </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                      <label class="form-check-label" for="flexRadioDefault1"> Salados</label>
-                    </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                      <label class="form-check-label" for="flexRadioDefault1"> Cakes</label>
-                  </div>
-                  <div class="row">
-                    <p class="categories">Tags</p>
-                  </div>
-                  <div class="container-fluid">
-                    <div class="container-fluid d-flex justify-content-center mb-2 flex-wrap ">
-                      <div class="tags_btn_A shadow-sm p-1 m-1">
-                        <p> Frutilla</p>
-                      </div>
-                      <div class="tags_btn_A shadow-sm p-1 m-1">
-                        <p>Chocolate</p>
-                      </div>
-                      <div class="tags_btn_A shadow-sm p-1 m-1">
-                        <p>Crema</p>
-                      </div>
-                      <div class="tags_btn_B p-1 m-1">
-                        <p>Cupcakes</p>
-                       </div>
-                      <div class="tags_btn_B p-1 m-1">
-                        <p>Empanadas</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+
               </div>
             </div>
-            <h2 class="ps-2">Filtro</h2>
+            </div>
+            <div class="container-fluid d-flex justify-content-center mt-4 ">
+              <div class="form-floating ">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" style="width: 400px !important;">
+                  <option selected>Mas relevantes</option>
+                  <option value="1">Ordenar A-Z</option>
+                  <option value="2">Menor precio</option>
+                  <option value="3">Mayor precio</option>
+                </select>
+                <label for="floatingSelect">Ordenar por</label>
+              </div>
+            </div>
           </div>
           <!--Container de seccion productos-->
         <section class="container-fluid p-5 container_shop">
@@ -253,9 +198,6 @@
                           <div class="tags_btn_B p-1 m-1">
                             <p>Empanadas</p>
                           </div>
-                        </div>
-                        <div class="container-fluid d-flex justify-content-between ">
-                          
                         </div>
                       </div>
                     </div>

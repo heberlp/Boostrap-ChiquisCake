@@ -617,7 +617,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: 0.2s; }
   .article:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
   .article a {
     text-decoration: none;
