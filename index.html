@@ -84,19 +84,14 @@
         <section class="grid_image">
           <div class="gridcontainer">
               <div class="grid_item1 grid">
-                <p>Frutilla con Crema</p>
               </div>
               <div class="grid_item2 grid">
-                <p>Glaceado</p>
               </div>
               <div class="grid_item3 grid ">
-                <p>Medialunas</p>
               </div>
               <div class="grid_item4 grid">
-                <p>Pancakes</p>
               </div>
               <div class="grid_item5 grid">
-                <p>Relleno de chocolate</p>
               </div>
             </div>
           </div>
@@ -114,21 +109,21 @@
           </div>
           <div class="row d-flex justify-content-center mt-4">
             <div class="var_item col d-flex flex-column">
-              <img src="./img/9bf173382fa2d0a7f1cc212c9fa44886.jpg" class="rounded-circle" alt="...">
+              <img src="./img/9bf173382fa2d0a7f1cc212c9fa44886.jpg" class="rounded-circle" alt="Empanadas">
               <div class="text_var">
-                <h3>Salados</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque, assumenda repudiandae numquam necessitatibus.</p>
+                <h3>Desayunos</h3>
+                <p class="fs-6">Asegúrate de empezar con buen pie el dia. Por eso disponemos de una gran selección de productos para tu desayuno, te ofrecemos una gran variedad de productos para dar gusto a tu paladar.</p>
               </div>
             </div>
               <div class="var_item col d-flex flex-column mb-5">
-              <img src="./img/a87907cb9991f2d578ecf1b5cffdcf60.jpg" class="rounded-circle" alt="...">
+              <img src="./img/a87907cb9991f2d578ecf1b5cffdcf60.jpg" class="rounded-circle" alt="Tortas">
             
               <h3>Tortas</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque, assumenda repudiandae numquam necessitatibus.</p></div>
+              <p class="fs-6">Nuestras tortas son el regalo perfecto del tamaño de un bocado. Vienen en una variedad de sabores y se pueden comprar a granel o individualmente. Cada pieza está recién hecha y completamente llena de delicias.</div>
             <div class="var_item col d-flex flex-column">
-              <img src="./img/b1146339a9c3099c9f99f2c237137563.jpg" class="rounded-circle" alt="...">
+              <img src="./img/b1146339a9c3099c9f99f2c237137563.jpg" class="rounded-circle" alt="Cupcakes">
               <h3>Cupcakes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque, assumenda repudiandae numquam necessitatibus.</p></div>
+              <p>Los cupcakes están hechos desde cero y no están prefabricados. Son ligeros, húmedos y deliciosos. Nos enorgullecemos de nuestros cupcakes y hemos tenido muchos clientes que regresan por más.</p></div>
           </div>
         </section>
         <!--SUSCRIBITE FORM-->
@@ -137,12 +132,30 @@
             <div class="form_new row mt-5 pb-5">
               <h1>REGISTRATE AL NEWSLETTER Y RECIBÍ TODAS NUESTRAS PROMOS</h1>
             </div>
-            <div class="container-fluid form_new_1 form-floating m-1 d-flex justify-content-center">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email</label>
+            <div class="container-sm">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com">
+              </div>
             </div>
-            <div class="container d-flex justify-content-center">
-              <button type="button" class="btn suscribe btn-light">Suscribíte</button>
+            <div class="container d-flex justify-content-center"><!-- Button trigger modal -->
+              <button type="button" class="btn suscribe" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Suscribrirme
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel"><i class="fa-sharp fa-solid fa-circle-check pe-2"></i>Suscripcion exitosa</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      <p>Gracias por suscribirte a nuestro Newsletter. Esperamos puedas aprovechar nuestras ofertas semanales.</p> 
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -150,15 +163,15 @@
         <section class="dad_info container-fluid d-flex justify-content-center align-items-center text-center">
           <div class="row son_adc d-flex justify-content-center align-items-center">
             <div class="info_adc col border-end">
-              <img src="./img/local_shipping_FILL0_wght400_GRAD0_opsz48.png" alt="">
+              <img src="./img/local_shipping_FILL0_wght400_GRAD0_opsz48.png" alt="Camion">
               <h3>ENVIOS GRATIS  A TODA CABA</h3>
             </div>
             <div class="info_adc col">
-              <img src="./img/credit_card_FILL0_wght400_GRAD0_opsz48.png" alt="">
+              <img src="./img/credit_card_FILL0_wght400_GRAD0_opsz48.png" alt="Tarjeta">
               <h3>ACEPTAMOS TODOS LOS MEDIOS DE PAGO</h3>
             </div>
             <div class="info_adc col border-start">
-              <img src="./img/lock_FILL0_wght400_GRAD0_opsz48.png" alt="">
+              <img src="./img/lock_FILL0_wght400_GRAD0_opsz48.png" alt="Candado">
               <h3>PROTEGEMOS TUS DATOS, HACE TU COMPRA SEGURA</h3>
             </div>
           </div>
@@ -185,9 +198,6 @@
         <!-- Instagram -->
         <a class="btn btn-outline-light btn-floating border border-0 m-1" href="#!" role="button"
           ><i class="fab fa-instagram"></i></a>
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating border border-0  m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i></a>
           </section>
           <section class="title_border mb-4">
             <h1>
@@ -196,7 +206,7 @@
           </section>
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
+          Diseañado por <a href="https://github.com/heberlp" class="text-white" target="_blank"><b>HeberStudios</b></a> ©2022 Copyright:
           <p class="text-white">Todos los derechos son reservados</p>
         </div>
         <!-- Copyright -->
